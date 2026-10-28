@@ -1,10 +1,20 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
 
 app = FastAPI(
     title="ResourceLoop AI/RAG Engine",
     description="Microservice for SOP RAG, Document Verification, Condition Inspection, and Guardrails."
+)
+
+# Enable CORS for React/Vite/frontend cross-origin requests
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # ----------------- IN-MEMORY SOP RAG ENGINE -----------------
