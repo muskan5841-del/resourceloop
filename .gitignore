@@ -147,3 +147,16 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# ResourceLoop local database files
+backend/resourceloop.db
+backend/resourceloop.db-shm
+backend/resourceloop.db-wal
+
+# Temporary backend backups
+backend/app.shared-backup.js
+backend/app.tested-backup.js
+
+# Dependencies and virtual environments
+backend/node_modules/
+backend/venv/

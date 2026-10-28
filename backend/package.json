@@ -2,7 +2,17 @@
   "name": "resourceloop-backend",
   "version": "1.0.0",
   "private": true,
-  "scripts": {"dev": "nodemon app.js", "start": "node app.js"},
-  "dependencies": {"cors": "^2.8.5", "dotenv": "^16.4.7", "express": "^4.21.2"},
-  "devDependencies": {"nodemon": "^3.1.9"}
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
